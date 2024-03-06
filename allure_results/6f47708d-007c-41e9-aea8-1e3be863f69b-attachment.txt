@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"ku84@mail.ru","name":"Alex"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTg4YzBmOWVkMjgwMDAxYjNjNDkxMSIsImlhdCI6MTcwOTczOTAyMywiZXhwIjoxNzA5NzQwMjIzfQ.Ih5osSSTiDg1p0X0beEdyD2TSn9IE2aooTwhBgUCE64","refreshToken":"8b5112a6f9d3c55543b9037ad4720d64919899a3af27c8c13932d3cd8ddb083382ec0d9b81f80c27"}
