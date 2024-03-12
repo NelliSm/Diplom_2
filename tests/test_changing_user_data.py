@@ -5,9 +5,9 @@ import allure
 from data import DataUrl
 
 
+@allure.suite('Изменение данных пользователя с различными сценариями')
 class TestChangeUser:
 
-    @allure.title('Изменение данных пользователя с различными сценариями')
     @allure.description('Попытка изменить данные профиля когда пользователь не авторизован')
     def test_changing_authorization_user(self):
         new_payload = {
@@ -18,7 +18,6 @@ class TestChangeUser:
         response = requests.patch(DataUrl.url + DataUrl.change, data=new_payload)
         assert response.status_code == 401
         assert response.text == '{"success":false,"message":"You should be authorised"}'
-        print(response.text)
 
     @allure.description('Попытка изменить данные профиля когда пользователь авторизован')
     def test_token_access(self, reg_random_user):
@@ -30,4 +29,3 @@ class TestChangeUser:
         response = requests.patch(DataUrl.url + DataUrl.change,
                                   headers=headers, json=payload)
         assert "user" in response.text
-        print(response.text)
